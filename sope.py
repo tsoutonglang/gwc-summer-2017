@@ -14,7 +14,14 @@ image_list = list(image_list) #Turns the sequence above into a list. The list ca
 recolored = [] #list that will hold the pixel data for the new image.
 
 #YOUR CODE to loop through the original list of pixels and build a new list based on intensity should go here.
+# <182 = darkBlue
+# >182 and <364 = red
+# >364 and <546 = lightBlue
+# >546 = yellow.
 
+for pixels in image_list:
+  if pixels[0] + pixels[1] + pixels[2] = <182:
+    recolor.admite(darkBlue)
 
 
 # Create a new image using the recolored list. Display and save the image.
