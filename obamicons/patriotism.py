@@ -5,31 +5,10 @@ darkBlue = (0, 51, 76)
 red = (217, 26, 33)
 lightBlue = (112, 150, 158)
 yellow = (252, 227, 166)
-# #jin wings colors
-# gray = (60, 66, 85)
-# turquoise = (21, 156, 152)
-# pink = (251, 151, 163)
-# red = (203, 66, 111)
-#jimin wings colors
-# darkPurple = (37, 29, 43)
-# red = (164, 34, 49)
-# lightPurple = (152, 144, 152)
-# green = (205, 220, 210)
-# #suga wings colors
-# black = (41, 37, 44)
-# gold = (128, 91, 75)
-# yellow = (189, 169, 129)
-# cream = (209, 231, 216)
-#rap monster colors
-# darkRed = (48, 3, 18)
-# red = (168, 43, 94)
-# shadow = (148, 205, 193)
-# cream = (217, 245, 241)
-#jungkook colors
-
 
 # Import image.
-my_image = Image.open("img/jungkook.jpg") #change IMAGENAME to the path on your computer to the image you're using
+print("type the name of the file you want to patrionize (include the file type extention thingy):")
+my_image = Image.open("img/"+input()) #change IMAGENAME to the path on your computer to the image you're using
 image_list = my_image.getdata() #each pixel is represented in the form (red value, green value, blue value, transparency). You don't need the fourth value.
 image_list = list(image_list) #Turns the sequence above into a list. The list can be iterated through in a loop.
 
@@ -52,5 +31,4 @@ for pixels in image_list:
 new_image = Image.new("RGB", my_image.size) #Creates a new image that will be the same size as the original image.
 new_image.putdata(recolored) #Adds the data from the recolored list to the image.
 new_image.show() #show the new image on the screen
-# new_image.save("obamiconJin.jpg", "jpeg")
-new_image.save("recolored/obamiconJungkook.jpg", "jpeg")
+new_image.save("recolored/recolored.jpg", "jpeg")

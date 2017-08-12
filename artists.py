@@ -32,6 +32,7 @@ rembrandt = Artist("Rembrandt")
 # rembrandt.num_paintings()
 rembrandt.famous_work("The Anatomy Lesson of Dr. Nicolaes Tulp")
 
+print("welcome to the hall of artists. please choose a style:")
 print("post impressionism, comic, cubism, renaissance, baroque?")
 user_input = input()
 if user_input == "post impressionism":
