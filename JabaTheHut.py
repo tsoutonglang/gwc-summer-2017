@@ -12,7 +12,6 @@ y_pos = -150
 
 ### Write your code below:
 t.pencolor("rosy brown")
-#for BountyHunters in range(3):
 t.forward(75)
 t.left(140)
 t.forward(50)
@@ -22,23 +21,25 @@ t.penup()
 t.right(-50)
 t.pendown()
 t.pencolor("aquamarine")
-#for BountyHunters in range(3):
 t.forward(75)
 t.left(90)
 t.forward(25)
 t.left(90)
 t.pencolor("coral")
-for BountyHunters in range(2):
-    t.forward(30)
-    t.right(90)
-    t.forward(25)
-    t.right(90)
+t.forward(30)
 t.right(90)
 t.forward(25)
+t.right(90)
+t.forward(30)
+# for Hunters in range(2):
+t.right(90)
+t.forward(25)
+t.right(180)
+t.forward(25)
 t.pencolor("aquamarine")
+# t.left(90)
 t.forward(25)
 t.left(90)
 t.forward(75)
-
 # Close window on click.
 exitonclick()

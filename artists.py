@@ -11,7 +11,8 @@ class Artist:
     def famous_work(self, famous):
         self.famous.append(famous)
 
-########################
+#actual artists now
+
 vanGough = Artist("Vincent Van Gough")
 vanGough.num_painting(900)
 vanGough.famous_work("The Starry Night")
@@ -27,7 +28,11 @@ picasso.famous_work("The Old Guitarist")
 michelangelo = Artist("Michelangelo")
 michelangelo.famous_work("The Creation of Adam")
 
-print("post impressionism, comic, cubism, or renaissance?")
+rembrandt = Artist("Rembrandt")
+# rembrandt.num_paintings()
+rembrandt.famous_work("The Anatomy Lesson of Dr. Nicolaes Tulp")
+
+print("post impressionism, comic, cubism, renaissance, baroque?")
 user_input = input()
 if user_input == "post impressionism":
     print("Vincent Van Gough")
@@ -47,3 +52,8 @@ elif user_input == "cubism":
 elif user_input == "renaissance":
     print("Michelangelo")
     print("one most notable work:" + (str(michelangelo.famous)))
+elif user_input == "baroque":
+    print("Rembrandt")
+    #print("paintings made:)
+    #print(rembrandt.paintings)
+    print("one most notable work:" + (str(rembrandt.famous)))
