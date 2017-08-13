@@ -1,3 +1,6 @@
+# if using python 3.6 change to input
+# if using python 2.7 change to raw_input
+
 class Artist:
 
     def __init__(self, name):
@@ -34,7 +37,7 @@ rembrandt.famous_work("The Anatomy Lesson of Dr. Nicolaes Tulp")
 
 print("welcome to the hall of artists. please choose a style:")
 print("post impressionism, comic, cubism, renaissance, baroque?")
-user_input = input()
+user_input = raw_input()
 if user_input == "post impressionism":
     print("Vincent Van Gough")
     print("paintings made:")

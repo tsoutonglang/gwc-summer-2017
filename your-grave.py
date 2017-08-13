@@ -1,3 +1,6 @@
+# if using python 3.6 change to input
+# if using python 2.7 change to raw_input
+
 start = '''
 You wake up strapped to a chair at the bottom of a grave. Your arms are tied behind your back, and your feet are tied to the chair.
 You look up and see the Riddler standing over you with a shovel in his hand.
@@ -11,17 +14,17 @@ print(start)
 
 print("People endangered: 5")
 print("'What is the beginning of eternity, the end of time and space, the beginning of every end, and every race?''")
-user_input = input()
+user_input = raw_input()
 if user_input == "e":
     print("'Congrats, you just saved yourself and two others...''")
     print("People endangered: 3")
     print("'What starts with the letter 'e,' ends with 'e,' but only has one letter?''")
-    user_input = input()
+    user_input = raw_input()
     if user_input == "eye":
         print("'Congrats, you saved two more people. Ready for the final round?''")
         print("People endangered: 1")
         print("'What belongs to you, but is used by others?'")
-        user_input = input()
+        user_input = raw_input()
 
         if user_input == "your name":
             print("'Congradulations young Gothamite, you saved your butt and 5 people'")

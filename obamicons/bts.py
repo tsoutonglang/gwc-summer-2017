@@ -1,3 +1,6 @@
+# if using python 3.6 change to input
+# if using python 2.7 change to raw_input
+
 from PIL import Image
 
 # Import image.
