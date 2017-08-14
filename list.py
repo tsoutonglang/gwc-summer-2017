@@ -1,10 +1,7 @@
 import random
 
-# if using python 3.6 change to input
-# if using python 2.7 change to raw_input
-
 print("Would you like to use a random name, food, or haiku generator?")
-user_input = raw_input()
+user_input = input()
 
 #NAME GENERATOR
 if user_input == "name":
