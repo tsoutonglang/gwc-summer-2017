@@ -10,7 +10,7 @@ image_list = list(image_list) #Turns the sequence above into a list. The list ca
 recolored = [] #list that will hold the pixel data for the new image.
 
 #YOUR CODE to loop through the original list of pixels and build a new list based on intensity should go here.
-print("chose a color scheme: rap monster, jin, suga, jhope, jimin, v, jungkook, or murica")
+print("chose a color scheme: rap monster, jin, suga, jhope, jimin, v, jungkook, murica, or seventeen")
 color = input()
 
 if color == "rap monster":
@@ -125,10 +125,25 @@ if color == "murica":
             recolored.append(lightBlue)
         else:
             recolored.append(yellow)
+if color == "seventeen":
+    serenity = (146, 168, 209)
+    roseQuartz = (247,202,201)
+    lightBlue = (182, 193, 214)
+    lightPink = (255, 223, 221)
+    for pixels in image_list:
+        if pixels[0] + pixels[1] + pixels[2] < 182:
+            recolored.append(serenity)
+        elif pixels[0] + pixels[1] + pixels[2] > 182 and pixels[0] + pixels[1] + pixels[2] < 364:
+            recolored.append(lightBlue)
+        elif pixels[0] + pixels[1] + pixels[2] > 364 and pixels[0] + pixels[1] + pixels[2] < 546:
+            recolored.append(roseQuartz)
+        else:
+            recolored.append(lightPink)
 
 # Create a new image using the recolored list. Display and save the image.
 new_image = Image.new("RGB", my_image.size) #Creates a new image that will be the same size as the original image.
 new_image.putdata(recolored) #Adds the data from the recolored list to the image.
 new_image.show() #show the new image on the screen
+print("save the picture with a new name!")
 name = input()
 new_image.save("recolored/"+name+".jpg", "jpeg")
